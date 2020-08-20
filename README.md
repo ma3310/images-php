@@ -12,9 +12,15 @@ With default configuration, this image only listen 80 port to serve html site, s
 
 User could prepare PHP sites configuration, then mount resident folder to /etc/nginx/sites-enabled.
 
+Below PHP settings is updated from original values:
+
+| Package       | Value    | Comments                  |
+|---------------|----------|---------------------------|
+| memory_limit  | 384M     |                           |
+
 ### Usage
 ``` bash
-
+# Start with shipped docker-compose.yml file.
 docker-compose -f '7.4-nginx-ubuntu-20.04/docker-compose.yml' up -d
 ```
 
