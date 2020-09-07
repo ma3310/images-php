@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y software-properties-common apt-utils cu
   && dpkg -i /tmp/mysql-apt-config.deb \
   && add-apt-repository ppa:ondrej/nginx && add-apt-repository ppa:ondrej/php && apt-get update && apt-get upgrade -y \
   && apt-get install -y nginx-extras \
-  php7.4 php7.4-bcmath php7.4-cli php7.4-curl php7.4-dev php7.4-enchant php7.4-fpm php7.4-gd php7.4-gmp php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-pgsql php7.4-soap php7.4-xml php7.4-xmlrpc php7.4-zip \
-  php-tokenizer php-redis php-xdebug \
+  php7.4 php7.4-bcmath php7.4-cli php7.4-curl php7.4-enchant php7.4-fpm php7.4-gd php7.4-gmp php7.4-json php7.4-mbstring php7.4-mysql php7.4-opcache php7.4-pgsql php7.4-soap php7.4-xml php7.4-xmlrpc php7.4-zip \
+  php-tokenizer php-pear php-redis php-xdebug \
   mysql-client \
   && apt-get clean && rm -rf /var/lib/apt/lists/* && rm -f /tmp/mysql-apt-config.deb \
   && phpdismod xdebug \
